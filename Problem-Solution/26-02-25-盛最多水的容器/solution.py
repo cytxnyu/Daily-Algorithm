@@ -10,7 +10,8 @@ class Solution:
             else:
                 r -= 1
         return ans
-
+s = Solution()
+print(s.maxArea([1,8,6,2,5,4,8,3,7]))
 #时间复杂度是多少?
 """时间复杂度 O(n)，空间复杂度 O(1)"""
 
