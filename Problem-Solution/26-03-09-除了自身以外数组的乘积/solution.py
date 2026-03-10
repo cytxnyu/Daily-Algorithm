@@ -14,4 +14,4 @@ class Solution:
         return answer 
 
 s = Solution()
-print(s.productExceptSelf([1,2,3,4]))
+print(s.productExceptSelf([2, 4, 1, 3, 5]))
