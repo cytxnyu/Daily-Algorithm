@@ -34,14 +34,13 @@ class Solution:
                 node = node.next
         if l2.next != None:
             while l2.next:
-                while l2.next:
-                    node.next = ListNode((l2.next.val + i)%10)
-                    if l2.next.val + i >= 10:
-                        i = 1
-                    else:
-                        i = 0
-                    l2 = l2.next
-                    node = node.next 
+                node.next = ListNode((l2.next.val + i)%10)
+                if l2.next.val + i >= 10:
+                    i = 1
+                else:
+                    i = 0
+                l2 = l2.next
+                node = node.next 
         if i == 1:
             node.next = ListNode(1)
         return node1 
@@ -56,5 +55,5 @@ L2.next.next = ListNode(4)
 result = s.addTwoNumbers(L1, L2)
 while result:
     print(result.val)
-    
+
     result = result.next
