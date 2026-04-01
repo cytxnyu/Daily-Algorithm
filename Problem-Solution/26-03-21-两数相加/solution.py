@@ -56,4 +56,5 @@ L2.next.next = ListNode(4)
 result = s.addTwoNumbers(L1, L2)
 while result:
     print(result.val)
+    
     result = result.next
