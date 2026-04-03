@@ -9,7 +9,7 @@ class Solution:
         p = head
         while prev != tail:
             nex = p.next
-            p.next = prev 
+            p.next = prev
             prev = p
             p = nex
         return tail, head
@@ -27,9 +27,9 @@ class Solution:
                     return hair.next
             nex = tail.next
             head, tail = self.reverse(head , tail)
-            pre.next = head 
+            pre.next = head
             tail.next = nex
-            pre = tail 
-            head = tail.next 
+            pre = tail
+            head = tail.next
 
         return hair.next
