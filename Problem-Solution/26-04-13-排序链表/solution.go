@@ -80,7 +80,7 @@ func buildList(nums []int) *ListNode {
 }
 
 func main() {
-	head := buildList([]int{4, 2, 1, 3})
+	head := buildList([]int{9, 3, 7, 4})
 	res := sortList(head)
 
 	for res != nil {
